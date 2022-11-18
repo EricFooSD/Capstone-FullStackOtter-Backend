@@ -1,0 +1,191 @@
+module.exports = {
+  up: async (queryInterface) => {
+    const moreUsers = [
+      {
+        username: 'Lovegood',
+        password: 'be3c67cd5afa51dd80c15135325c39de6b01a8d16f5d1c8a2bf0da953c904b3c374154251bdde38ad3b7f795dc620538ee11d032f7856d3bc12968873a82c0d0',
+        name: 'Luna Lovegood',
+        email: 'fakeemail@gmail.com',
+        location: 'London',
+        account_type: 'engineer',
+        profile_photo: 'https://i.pinimg.com/originals/a6/58/32/a65832155622ac173337874f02b218fb.png',
+        minimum_salary: 100.0,
+        portfolio_url: 'https://www.youtube.com/watch?v=3wR4mZdTytw',
+        about_me: 'I love to code.',
+        experience: 'Loving life',
+        industry_id: 5,
+        created_at: new Date(),
+        updated_at: new Date(),
+      },
+      {
+        username: 'Cho',
+        password: 'be3c67cd5afa51dd80c15135325c39de6b01a8d16f5d1c8a2bf0da953c904b3c374154251bdde38ad3b7f795dc620538ee11d032f7856d3bc12968873a82c0d0',
+        name: 'Cho Chang',
+        email: 'fakeemail@gmail.com',
+        location: 'Seoul',
+        account_type: 'engineer',
+        profile_photo: 'https://cdn.icon-icons.com/icons2/2643/PNG/512/female_woman_person_people_avatar_icon_159366.png',
+        minimum_salary: 99.0,
+        portfolio_url: 'https://www.youtube.com/watch?v=3wR4mZdTytw',
+        about_me: 'I love to code.',
+        experience: 'Loving life',
+        industry_id: 5,
+        created_at: new Date(),
+        updated_at: new Date(),
+      },
+      {
+        username: 'Malfoy',
+        password: 'be3c67cd5afa51dd80c15135325c39de6b01a8d16f5d1c8a2bf0da953c904b3c374154251bdde38ad3b7f795dc620538ee11d032f7856d3bc12968873a82c0d0',
+        name: 'Draco Malfoy',
+        email: 'fakeemail@gmail.com',
+        location: 'Los Angeles',
+        account_type: 'engineer',
+        profile_photo: 'https://cdn.iconscout.com/icon/free/png-256/avatar-370-456322.png',
+        minimum_salary: 188.0,
+        portfolio_url: 'https://www.youtube.com/watch?v=3wR4mZdTytw',
+        about_me: 'I love to code.',
+        experience: 'Loving life',
+        industry_id: 5,
+        created_at: new Date(),
+        updated_at: new Date(),
+      },
+      {
+        username: 'Hagrid',
+        password: 'be3c67cd5afa51dd80c15135325c39de6b01a8d16f5d1c8a2bf0da953c904b3c374154251bdde38ad3b7f795dc620538ee11d032f7856d3bc12968873a82c0d0',
+        name: 'Rubeus Hagrid',
+        email: 'fakeemail@gmail.com',
+        location: 'Perth',
+        account_type: 'engineer',
+        profile_photo: 'https://cdn.iconscout.com/icon/free/png-256/avatar-370-456322.png',
+        minimum_salary: 888.0,
+        portfolio_url: 'https://www.youtube.com/watch?v=3wR4mZdTytw',
+        about_me: 'I love to code.',
+        experience: 'Loving life',
+        industry_id: 5,
+        created_at: new Date(),
+        updated_at: new Date(),
+      },
+    ];
+    const moreUserSkills = [
+      {
+        user_id: 6,
+        skill_id: 1,
+        created_at: new Date(),
+        updated_at: new Date(),
+      },
+      {
+        user_id: 6,
+        skill_id: 2,
+        created_at: new Date(),
+        updated_at: new Date(),
+      },
+      {
+        user_id: 6,
+        skill_id: 3,
+        created_at: new Date(),
+        updated_at: new Date(),
+      },
+      {
+        user_id: 6,
+        skill_id: 4,
+        created_at: new Date(),
+        updated_at: new Date(),
+      },
+      {
+        user_id: 6,
+        skill_id: 5,
+        created_at: new Date(),
+        updated_at: new Date(),
+      },
+      {
+        user_id: 6,
+        skill_id: 6,
+        created_at: new Date(),
+        updated_at: new Date(),
+      },
+      {
+        user_id: 7,
+        skill_id: 1,
+        created_at: new Date(),
+        updated_at: new Date(),
+      },
+      {
+        user_id: 7,
+        skill_id: 2,
+        created_at: new Date(),
+        updated_at: new Date(),
+      },
+      {
+        user_id: 7,
+        skill_id: 3,
+        created_at: new Date(),
+        updated_at: new Date(),
+      },
+      {
+        user_id: 7,
+        skill_id: 4,
+        created_at: new Date(),
+        updated_at: new Date(),
+      },
+      {
+        user_id: 7,
+        skill_id: 5,
+        created_at: new Date(),
+        updated_at: new Date(),
+      },
+      {
+        user_id: 7,
+        skill_id: 6,
+        created_at: new Date(),
+        updated_at: new Date(),
+      },
+      {
+        user_id: 8,
+        skill_id: 7,
+        created_at: new Date(),
+        updated_at: new Date(),
+      },
+      {
+        user_id: 8,
+        skill_id: 8,
+        created_at: new Date(),
+        updated_at: new Date(),
+      },
+      {
+        user_id: 8,
+        skill_id: 9,
+        created_at: new Date(),
+        updated_at: new Date(),
+      },
+      {
+        user_id: 8,
+        skill_id: 10,
+        created_at: new Date(),
+        updated_at: new Date(),
+      },
+      {
+        user_id: 9,
+        skill_id: 9,
+        created_at: new Date(),
+        updated_at: new Date(),
+      },
+      {
+        user_id: 9,
+        skill_id: 10,
+        created_at: new Date(),
+        updated_at: new Date(),
+      },
+    ];
+    await Promise.all([
+      queryInterface.bulkInsert('users', moreUsers),
+    ]);
+    await queryInterface.bulkInsert('user_skills', moreUserSkills);
+  },
+
+  down: async (queryInterface) => {
+    await queryInterface.dropTable('user_skills');
+    await Promise.all([
+      queryInterface.dropTable('users'),
+    ]);
+  },
+};
